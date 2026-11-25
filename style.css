@@ -1,0 +1,489 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F6F2;
+    color: #35332F;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 8%;
+    border-bottom: 1px solid #E7E2DC;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #35332F;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #55514C;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: #A58B7C;
+}
+
+
+/* INTRODUCTION */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    padding: 90px 8%;
+}
+
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #A58B7C;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.intro {
+    max-width: 420px;
+    color: #716C65;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #35332F;
+
+    color: #35332F;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #35332F;
+    color: #FFFFFF;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+
+/* PORTFOLIO PROJECTS */
+
+.work-section {
+    padding: 80px 8%;
+    background-color: #F1EDE7;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.project {
+    padding: 30px 0;
+    border-top: 1px solid #CFC6BC;
+}
+
+.project-number {
+    font-size: 12px;
+    color: #A58B7C;
+}
+
+.project h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 20px 0 12px;
+}
+
+.project p {
+    color: #716C65;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.project a {
+    color: #35332F;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: 45px;
+    align-items: start;
+}
+
+/* Biography text */
+
+.about-content {
+    max-width: 100%;
+}
+
+.about-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+/* Photograph */
+
+.about-image {
+    width: 100%;
+    margin-top: -150px;
+
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Background and skills */
+
+.about-details {
+    margin-top: 55px;
+    padding-top: 30px;
+    border-top: 1px solid #CFC6BC;
+}
+
+.about-details h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #34312F;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-image {
+        max-width: 400px;
+    }
+
+    .about-image img {
+        height: auto;
+    }
+
+    .about-details {
+        margin-top: 40px;
+        padding-top: 25px;
+    }
+
+}
+
+
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    text-align: center;
+    padding: 90px 20px;
+    background-color: #F1EDE7;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+
+
+.email-address {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.email-address a {
+    color: #333;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 500;
+}
+
+.email-address a:hover {
+    color: #888;
+}
+
+.contact-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #34312f;
+    margin: 12px 0;
+}
+
+.contact-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #666;
+    margin: 0 0 22px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 11px;
+    color: #827B73;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 22px 6%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 6%;
+        gap: 35px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 70px 6%;
+    }
+
+    .work-section {
+        padding: 70px 6%;
+    }
+
+}
+
+
+
+
+/* WRITING SAMPLES PAGE */
+
+.writing-samples-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 8%;
+}
+
+/* Heading */
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.section-intro {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    max-width: 550px;
+}
+
+/* Project list */
+
+.project-list {
+    border-top: 1px solid #dedbd5;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 35px 0;
+    border-bottom: 1px solid #dedbd5;
+}
+
+/* Project numbers */
+
+.project-number {
+    font-size: 13px;
+    color: #999;
+    padding-top: 7px;
+}
+
+/* Project content */
+
+.project-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.project-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 650px;
+    margin-bottom: 18px;
+}
+
+/* PDF links */
+
+.project-content a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.project-content a:hover {
+    color: #9a8876;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    .work-section {
+        padding: 65px 7%;
+    }
+
+    .section-heading h1 {
+        font-size: 34px;
+    }
+
+    .project {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+        padding: 28px 0;
+    }
+
+    .project-content h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* Project Areas */
+
+.project-areas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 16px;
+    max-width: 650px;
+}
+
+.areas-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.areas-list {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
